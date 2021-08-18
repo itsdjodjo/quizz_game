@@ -18,7 +18,7 @@ else:
     print("Incorrect")
 
     time.sleep(2)  # time.sleep make my game more fun
-    print("The correct answer is : 'central processing unit'")
+    print("The correct answer is : 'new delhi'")
 
 
 answer = input("Who's the first President of USA ? ")
