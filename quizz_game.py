@@ -169,9 +169,8 @@ def about_pc():
         print("You got " + str(score) + " wright answer")
 
 
-play = input('''Chose the topic: \n
-             write capital for World Capital topic or
-             computer for Computer Science: ''')
+play = input('''Chose the topic:
+write capital for World Capital topic or computer for Computer Science: ''')
 if play.lower() == "capital":
     about_capital()
 elif play.lower() == "computer":
