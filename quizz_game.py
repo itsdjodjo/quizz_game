@@ -6,12 +6,12 @@ print("Welcome to my computer quizz!")
 score = 0
 print("Let's play !")
 time.sleep(2)
-print("Answer these question about general culture")
+print("Answer these question about World Capitals")
 
 
 # Now i'll ask the question
-answer = input("What CPU stand fo ? ")
-if answer.lower() == "central processing unit":
+answer = input("What is the capital of India ? ")
+if answer.lower() == "new delhi":
     score += 1
     print("Correct")
 else:
@@ -31,7 +31,7 @@ else:
     time.sleep(2)
     print("The correct answer is : 'george washington'")
 
-print("Who write one piece ? ", end=" ") # another way to ask the question
+print("Who write one piece ? ", end=" ")
 answer = input()
 if answer.lower() == "oda":
     score += 1
