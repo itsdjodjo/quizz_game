@@ -63,7 +63,7 @@ def about_capital():
         time.sleep(2)
         print("The correct answer is : 'Tokyo'")
 
-    answer = input("What is the capital of Spain ?")
+    answer = input("What is the capital of Spain ? ")
     if answer.lower() == "manchester":
         score += 1
         print("Correct")
@@ -113,7 +113,11 @@ def about_capital():
         time.sleep(2)
         print("The correct answer is : 'Dakar'")
 
-    print("You got " + str(score) + " question correct!")
+    time.sleep(2)
+    view_score = input("Want to see your score ? ")
+    if view_score.lower() == "yes":
+        time.sleep(1)
+        print("You got " + str(score) + " question correct!")
 
 
 def about_pc():
@@ -138,7 +142,7 @@ def about_pc():
         time.sleep(2)
         print("The correct answer is : 'Operating System'")
 
-    answer = input("What is GPU stand for ?")
+    answer = input("What is GPU stand for ? ")
     if answer.lower() == "graphic processing unit":
         score += 1
         print("Correct")
@@ -158,7 +162,11 @@ def about_pc():
         time.sleep(2)
         print("The correct answer is : 'Yes, it is'")
 
-    print("You got " + str(score) + " wright answer")
+    time.sleep(2)
+    view_score = input("Want to see your score ? ")
+    if view_score.lower() == "yes":
+        time.sleep(1)
+        print("You got " + str(score) + " wright answer")
 
 
 play = input('''Chose the topic: \n
