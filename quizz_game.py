@@ -65,7 +65,7 @@ else:
     print("The correct answer is : 'Tokyo'")
 
 
-answer = input("What is the capital of Spain ?")
+answer = input("What is the capital of Spain ? ")
 if answer.lower() == "manchester":
     score += 1
     print("Correct")
