@@ -32,8 +32,7 @@ else:
     print("The correct answer is : 'Toronto'")
 
 
-print("What is the capital of USA ? ", end=" ")
-answer = input()
+answer = input("What is the capital of USA ? ")
 if answer.lower() == "washington dc":
     score += 1
     print("Correct")
@@ -110,15 +109,15 @@ else:
     print("The correct answer is : 'Rabat'")
 
 
-answer = input("What is the capital of Senegal ? ")
-if answer.lower() == "dakar":
+answer = input("What is the capital of France ? ")
+if answer.lower() == "paris":
     score += 1
     print("Correct")
 else:
     print("Incorrect")
 
     time.sleep(2)
-    print("The correct answer is : 'Dakar'")
+    print("The correct answer is : 'paris'")
 
 
 print("You got " + str(score) + " question correct!")
