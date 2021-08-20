@@ -5,119 +5,33 @@ print("Welcome to my computer quizz!")
 
 score = 0
 print("Let's play !")
-time.sleep(2)
+time.sleep(1)
 print("Answer these question about World Capitals")
 
+questions = ["What is the capital of India ? ", "What is the capital of Canada ? ", "What is the capital of Canada ? ",
+             "What is the capital of Brazil ? ", "What is the capital of Japan ? ", "What is the capital of Spain ? ",
+             "What is the capital of South Korea ? ", "What is the capital of China ? ", "What is the capital of Marroco ? ",
+             "What is the capital of France ? "]
 
-# Now i'll ask the question
-answer = input("What is the capital of India ? ")
-if answer.lower() == "new delhi":
-    score += 1
-    print("Correct")
+answers = ["new delhi", "toronto", "washington dc", "brasilia",
+           "tokyo", "manchester", "seoul", "beijing", "rabat", "paris"]
+
+a = 0
+b = 0
+for question in questions:
+    answer = input(questions[a])
+    if answer.lower() == answers[b]:
+        score += 1
+        print("True")
+    else:
+        print("False")
+        time.sleep(1)
+        print("The correct answer is : " + answers[b])
+    a += 1
+    b += 1
+    
+see = input("Do you want to see yout score ? ")
+if see.lower() == "yes":
+    print("You got " + str(score) + " /", len(questions), " correct answer")
 else:
-    print("Incorrect")
-
-    time.sleep(2)  # time.sleep make my game more fun
-    print("The correct answer is : 'New Delhi'")
-
-
-answer = input("What is the capital of Canada ? ")
-if answer.lower() == "toronto":
-    score += 1
-    print("Correct")
-else:
-    print("Incorrect")
-
-    time.sleep(2)
-    print("The correct answer is : 'Toronto'")
-
-
-answer = input("What is the capital of USA ? ")
-if answer.lower() == "washington dc":
-    score += 1
-    print("Correct")
-else:
-    print("Incorrect")
-
-    time.sleep(2)
-    print("The correct answer is : 'Washington DC'")
-
-
-answer = input("What is the capital of Brazil ? ")
-if answer.lower() == "brasilia":
-    score += 1
-    print("Correct")
-else:
-    print("Incorrect")
-
-    time.sleep(2)
-    print("The correct answer is : 'Brasilia'")
-
-
-answer = input("What is the capital of Japan ? ")
-if answer.lower() == "tokyo":
-    score += 1
-    print("Correct")
-else:
-    print("Incorrect")
-
-    time.sleep(2)
-    print("The correct answer is : 'Tokyo'")
-
-
-answer = input("What is the capital of Spain ? ")
-if answer.lower() == "manchester":
-    score += 1
-    print("Correct")
-else:
-    print("Incorrect")
-
-    time.sleep(2)
-    print("The correct answer is : 'Manchester'")
-
-
-answer = input("What is the capital of South Korea ? ")
-if answer.lower() == "seoul":
-    score += 1
-    print("Correct")
-else:
-    print("Incorrect")
-
-    time.sleep(2)
-    print("The correct answer is : 'Seoul'")
-
-
-answer = input("What is the capital of China ? ")
-if answer.lower() == "beijing":
-    score += 1
-    print("Correct")
-else:
-    print("Incorrect")
-
-    time.sleep(2)
-    print("The correct answer is : 'Beijing'")
-
-
-answer = input("What is the capital of Marroco ? ")
-if answer.lower() == "rabat":
-    score += 1
-    print("Correct")
-else:
-    print("Incorrect")
-
-    time.sleep(2)
-    print("The correct answer is : 'Rabat'")
-
-
-answer = input("What is the capital of France ? ")
-if answer.lower() == "paris":
-    score += 1
-    print("Correct")
-else:
-    print("Incorrect")
-
-    time.sleep(2)
-    print("The correct answer is : 'paris'")
-
-
-print("You got " + str(score) + " question correct!")
+    quit()
