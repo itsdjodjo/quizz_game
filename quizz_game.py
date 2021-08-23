@@ -26,7 +26,7 @@ for question in questions:
     else:
         print("False")
         time.sleep(1)
-        print("The correct answer is : " + answers[b])
+        print("The correct answer is : " + answers[b].capitalize())
     a += 1
     b += 1
     
