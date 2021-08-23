@@ -8,12 +8,12 @@ print("Let's play !")
 time.sleep(1)
 print("Answer these question about World Capitals")
 
-questions = ["What is the capital of India ? ", "What is the capital of Canada ? ", "What is the capital of Canada ? ",
+questions = ["What is the capital of UK ? ", "What is the capital of Canada ? ", "What is the capital of Portugal ? ",
              "What is the capital of Brazil ? ", "What is the capital of Japan ? ", "What is the capital of Spain ? ",
-             "What is the capital of South Korea ? ", "What is the capital of China ? ", "What is the capital of Marroco ? ",
+             "What is the capital of South Korea ? ", "What is the capital of China ? ", "What is the capital of Morroco ? ",
              "What is the capital of France ? "]
 
-answers = ["new delhi", "toronto", "washington dc", "brasilia",
+answers = ["london", "toronto", "lisbonne", "brasilia",
            "tokyo", "manchester", "seoul", "beijing", "rabat", "paris"]
 
 a = 0
